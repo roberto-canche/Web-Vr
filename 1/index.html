@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Primer proyecto de Web-VR</title>
+        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="a1" src="assets/asset.jpg" />
+                <img id="a2" src="assets/asset_1.jpg" />
+                <img id="a3" src="assets/asset_2.jpg" />
+                <img id="a4" src="assets/asset_3.jpg" />
+            </a-assets>
+            <a-image src="#a1" position="-1.5 1.8 -3" onclick="show('a1')"></a-image>
+            <a-image src="#a2" position="0 1.8 -3" onclick="show('a2')"></a-image>
+            <a-image src="#a3" position="1.5 1.8 -3" onclick="show('a3')"></a-image>
+            <a-image src="#a4" position="3 1.8 -3" onclick="show('a4')"></a-image>
+            <a-sky src="#a3" id="sky"></a-sky>
+            <a-camera><a-cursor></a-cursor></a-camera>
+        </a-scene>
+
+        <script>
+            function show (id) {
+                document.getElementById('sky').setAttribute('src', '#' + id);
+            }
+        </script>
+    </body>
+  </html>
