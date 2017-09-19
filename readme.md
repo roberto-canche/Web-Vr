@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="https://github.com/roberto-canche/Web-Vr/tree/master/1/assets/demos.png"></p>
 
 
 
